@@ -1,9 +1,10 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
+
 import React from 'react';
 import {render} from "react-dom";
+import {BrowserRouter as Router} from "react-router-dom";
+import App from "./components/App";
 
-function Hey() {
-    // This is compiled to React.createElement(...) calls
-    return <p>Heya</p>
-}
 
-render(<Hey />, document.getElementById('app'));
+render(<Router><App/></Router>, document.getElementById('app'));
